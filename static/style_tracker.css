@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color: #FFFDFA;
+}
+li{
+    list-style: none;
+}
+#navbar{
+    outline:invert;
+    border-bottom: 1.2rem solid #61C33F;
+    box-shadow:
+       3px 3px 2px rgba(0, 0, 0, 0.23),
+      -2px -2px 2px rgba(0, 0, 0, 0.23),  
+       2px -2px 2px rgba(0, 0, 0, 0.23),
+      -2px 2px 2px rgba(0, 0, 0, 0.23),
+       2px 2px 2px rgba(0, 0, 0, 0.23);
+}
+#navbar ul{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    list-style: none;
+}
+#navbar ul li{
+    font-size: inherit;
+    /* border: 2px solid brown; */
+    padding: 2rem;
+   
+}
+#navbar ul li img{
+    border-radius: 1.2rem;
+    border-radius:2rem;
+}
+#navbar ul li:last-child{
+    background-color: #63BECA;
+    margin:1.2rem 1.2rem;
+    border-radius:3rem;
+}
+#navbar ul li a{
+    font-size: inherit;
+    color:white;   
+    text-decoration: none;
+    font-weight: 700;
+}
+#img{
+    width:20vw;
+    height:10vh;
+}
+.container{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    /* align-items: stretch; */
+    /* margin: auto; */
+    margin:2rem;
+    background-color: #D9D9D9;
+    /* padding:2em; */
+    padding:2rem;
+}
+.left{
+    /* border: 2px solid blue; */
+    /* width:50vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-left:1rem;
+    margin-right:20rem;
+    padding:4em; */
+    padding:3rem;
+
+}
+.left h3{
+    font-size: 1.4rem;
+    /* border: 2px solid green; */
+    width:40vw;
+    margin-bottom:2rem;
+}
+.left textarea{
+    font-size: 2rem;    /* border: 2px solid red; */
+}
+#btn{
+    padding:1.2rem 2.2rem;
+    border-radius: 2rem;
+    background-color: #C12E2E;
+    margin: auto;
+    color:white;
+    font-size:2rem;
+    outline:none;
+    border:none;
+}
+#btn:hover{
+    cursor: pointer;
+}
+.right{
+    /* border: 4px solid purple; */
+    border-radius:4rem;
+    padding:4rem;
+    background-color: white;
+}
+.right li{
+    margin:2.2rem;
+}
+#bottom{
+    margin:2rem 2rem 1.2rem 2rem;
+}
+.remarks{
+    /* border: 2px solid blue; */
+    /* overflow:scroll; */
+    color:#C12E2E;
+    font-size: 1rem;
+    /* margin-bottom: 1.2rem; */
+}
+.remarks h4{
+    margin-bottom: 0.6rem;
+}
+#remarkPara{
+    width:25vw;
+}
+.right ul li h5{
+    font-size:1.2rem;
+}
+.right ul li p{
+    font-size: 1.2rem;
+}

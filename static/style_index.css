@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin:0px;
+    padding: 0px;
+    font-size:8px;
+}
+body{
+    background-color: #FFFDFA;
+}
+
+
+
+
+/* Styling individual Components */
+
+
+/* Navbar Styling */
+#navbar {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    outline:invert;
+    border-bottom: 0.6em solid #61C33F;
+    box-shadow:
+       3px 3px 2px rgba(0, 0, 0, 0.23),
+      -2px -2px 2px rgba(0, 0, 0, 0.23),  
+       2px -2px 2px rgba(0, 0, 0, 0.23),
+      -2px 2px 2px rgba(0, 0, 0, 0.23),
+       2px 2px 2px rgba(0, 0, 0, 0.23);
+}
+#navbar ul{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: inherit;
+    list-style: none;
+}
+#navbar ul li{
+    margin:0em 2em;
+    padding:0.8em;
+    border-radius: 0.9em;
+    font-size: inherit;
+}
+#navbar ul li a{
+    font-size:inherit;
+    text-decoration: none;
+
+}
+#navbar ul li:first-child{
+    background-color: #5F5BFF;
+}
+#navbar ul li:last-child{
+    background-color: #FF5B5B;
+}
+#logo{
+    padding:4em;
+    /* border: 2px solid black; */
+}
+#logo img{
+    width:16vw;
+    height:11vh;
+    border-radius: 4em;
+}
+
+
+/* Styling the main content*/
+#mainContent{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 40px;
+    margin-top:1em;
+    padding:1.2em;
+    column-gap: 1.2em;
+    row-gap: 1.2em;
+
+}
+/* Styling the left side of the grid */
+.leftGrid{
+    background-color:#61C33F;
+    grid-area: 'left';
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 44px;
+    padding:1.2em;
+}
+
+.leftGrid h3{
+    font-size: 48px;
+    font-weight: 700;
+
+    margin-top:0.6em;
+    margin-bottom:0.6em;
+}
+.leftGrid p{
+    font-size:40px;
+    font-weight: 300;
+    /* border: 2px solid red; */
+    line-height: 1.2em;   
+}
+#mainPic{
+    width:50vw;
+    height: 60vh;
+    display: block;
+}
+/* Styling the right side of the grid */
+.rightGrid{
+    background-color: #5956CD;
+    grid-area: 'right';
+    grid-column-start:3;
+    grid-column-end: 4 ;
+}
+.rightGrid h3{
+    padding:0.6em;
+    font-size: 40px;
+    font-weight: 700;
+    border-bottom:4px solid #FFFDFA;
+    margin-top:0.6em;
+    color:#F8E74E;
+    text-align: center;
+}
+.rightGrid ul{
+    list-style: none;
+}
+.rightGrid ul li h5{
+    font-size:24px;
+    margin:2em 0em;
+
+}
+.rightGrid ul li p{
+    font-size:24px;
+    font-weight:300;
+}
+/* Styling the bottomg grid */
+.belowGrid{
+    background-color: #9B8ADF;
+    grid-area:'bottom';
+    grid-column-start:1 ;
+    grid-column-end:4 ;
+    font-size: 32px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 0.8em;
+    column-gap:1.2em;
+    padding:1.2em;
+}
+.firstFooter{
+    padding:0.4em;
+    font-size: inherit;
+    /* border: 2px solid black; */
+}
+.secondFooter{
+    padding:0.4em;
+    font-size: inherit;
+    /* border: 2px solid black; */
+    
+}
+.thirdFooter{
+    padding:0.4em;
+    font-size: inherit;
+    /* border: 2px solid black; */
+}
+.fourthFooter{
+    padding:0.4em;
+    font-size: inherit;
+    /* border: 2px solid black; */
+}
+.bottomFooter{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: inherit;
+}
+.belowGrid h6{
+    font-size: inherit;
+    font-weight:700;
+}
+.belowGrid p{
+    font-weight: 300;
+    font-size: 0.625em;
+}
+.secondFooter ul{
+    font-size: inherit;
+}
+.secondFooter ul li{
+    font-size: inherit;
+    list-style: none;
+}
+.secondFooter ul li a{
+    font-weight: 300;
+    font-size: 0.625em;
+}
+.thirdFooter ul{
+    font-size: inherit;
+    list-style: none;
+}
+.thirdFooter ul li{
+    font-size: inherit;
+}
+.thirdFooter ul li a{
+    font-weight: 300;
+    font-size: 0.625em;
+}
+.fourthFooter figure {
+    /* border: solid green; */
+    padding:0.5em;
+    width:13vw;
+    margin-bottom:1.2em
+}
+#upperIcon img{
+    display: block;
+    margin: auto;
+}
+#middleIcons{
+    display: flex;
+    justify-content:space-evenly;
+}
+#bottomIcon img{
+    display: block;
+    margin: auto;
+}
+.bottomFooter h6{
+    font-size:0.625em;
+    font-weight: 500;
+    text-align: center;
+}
+.bottomFooter p{
+    text-align: center;
+}

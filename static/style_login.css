@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* CSS Reset and setting the margins*/
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html,body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+    background:url('/login_pics/back.png') no-repeat center center/cover;
+    z-index: -1;
+}
+label{
+    display: inline;
+    border: 2px solid black;
+    width:1.5vw;
+}
+/* Styling the indiviual elements */
+.container{
+    border: 2px solid black;
+    background-color: #FFFDFA;
+    /* border: 2px solid red; */
+    display: grid;
+    height: 630.39px;
+    width:1000px;
+    grid-template-columns:repeat(2,1fr);
+    font-size: 15px;
+    column-gap: 1em;
+}
+/* Styling the left grid */
+.left{
+    /* border: 2px solid green; */
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:inherit;
+}
+.left div{
+    /* border:2px solid black; */
+    display:flex;
+    justify-content: stretch;
+    font-size:inherit ;
+    padding:1.2em;
+}
+.left input{
+    font-size:inherit;
+    font-weight:600;
+    width:20em;
+    background-color:#D9D9D9;
+    outline: none;
+    padding:0.5em;
+    margin:0em 0.3em;
+    border: none;
+}
+.left label{
+    outline: none;
+    border: none;
+    font-size: inherit;
+    background-color:#D9D9D9;
+    padding:0.5em;
+}
+/* Styling the button */
+.btn{
+    font-size: inherit;
+    display: block;
+    margin: auto;
+    padding:1.2em 3.2em;
+    border-radius: 2em;
+    background-color: #FF5B5B;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+}
+.btn:hover{
+    cursor: pointer;
+}
+/* Styling the new user section */
+.newUser{
+    font-size: inherit;
+    border: 2px solid black;
+    border-radius: 2em;
+    background-color: #103D94;
+}
+.newUser a{
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+}
+/* Styling the hr */
+hr{
+    height: 0.6em;
+    background-color: #D9D9D9;
+    border: none;
+    /* border-radius: 2em; */
+    outline: none;
+    /* color:grey; */
+}
+/* Styling the right portion of the grid */
+.right{
+    /* border: 2px solid purple; */
+    height: inherit;
+    width:26vw
+}
+.right img{
+    width: inherit;
+    height: inherit;
+}
+
+
+/* Styling the error Message */
+#errorMessage{
+    font-weight: 700;
+    color:red;
+    font-size: 24px;
+}
