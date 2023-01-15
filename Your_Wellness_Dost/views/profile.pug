@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    link(rel='stylesheet',href='/style_profile.css') 
+    script(src='/script_profile.js')
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <figure id="logo">
+            <img src="profile_pics/Main Logo.PNG" alt="">
+        </figure>
+        <div class="btn">
+            <a href="/tracker" id="track">Food Tracker</a>
+            <button type="submit" form="profileForm" id="mybtn">Save Changes</button>
+        </div>
+    </nav>
+    <form action="/profile" id="profileForm" method="POST" enctype="multipart/form-data">
+        <div class="profileContainer">
+            <figure id="profilePic">
+                <img src="profile_pics/Person.png" alt="" id="pic">
+            </figure>
+            <input type="file" name="myPic" id="Person">
+        </div>
+        <div class="nameContainer">
+            <textarea name="myName" id="name" cols="30" rows="5" placeholder="Your Name Here"></textarea>
+        </div>
+        <div class="healthContainer">
+            <h3>HEALTH INFORMATION</h3>
+            <div>
+                <div>
+                    <label for="disorders">DISORDERS (IF ANY):</label>
+                    <textarea name="myDisorders" id="disorders" cols="50" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="allergies">ALLERGIES (IF ANY):</label>
+                    <textarea name="myAllergies" id="allergies" cols="50" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="contactInfo">
+            <h3>CONTACT INFORMATION</h3>
+            <div class="contactDetails">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="myPassword">
+            </div>
+            <div class="contactDetails">
+                <label for="mobile">MOBILE NUMBER</label>
+                <input type="number" id="mobile" name="myMobile">
+            </div>
+            <div class="contactDetails">
+                <label for="email">Email Id</label>
+                <input type="email" id="email" name="myEmail">
+            </div>
+            <h3>PERSONAL INFORMATION</h3>
+            <div class="contactDetails">
+                <label for="age">AGE:</label>
+                <input type="text" id="age" name="myAge">
+            </div>
+            <div class="contactDetails">
+                <label for="gender">GENDER:</label>
+                <input type="text" id="gender" name="myGender">
+            </div>
+            <div class="contactDetails">
+                <label for="lastDate">LAST DOCTOR VISIT:</label>
+                <input type="date" id="lastDate" id="myLastVisit">
+            </div>
+            <div class="contactDetails">
+                <label for="nextDate">NEXT DOCTOR VISIT:</label>
+                <input type="date" id="nextDate" id="myNextVisit">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

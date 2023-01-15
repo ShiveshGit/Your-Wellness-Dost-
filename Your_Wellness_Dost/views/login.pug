@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    link(rel='stylesheet',href='/style_login.css')
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <form action="/login" id="loginForm" method="POST">
+                <div>
+                    <label for="username"><img src="/login_pics/us_icon.png" alt=""></label>
+                    <input type="text" id="username" placeholder="USERNAME" name="username">
+                </div>
+                <div>
+                    <label for="password"><img src="/login_pics/key_icon.png" alt=""></label>
+                    <input type="password" placeholder="PASSWORD" id="password" name="password">
+                </div>
+                <div>
+                    <button class="btn" submit="loginForm">LOGIN</button>
+                </div>
+                <div id="errorMessage">
+                    | #{message}
+                </div>
+                <hr>
+            </form>
+            <div class="newUser">
+                <a href="/profile"> New User Sign Up</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="/login_pics/Login_Page.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
