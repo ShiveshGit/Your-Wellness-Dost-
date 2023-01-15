@@ -1,5 +1,5 @@
 # Your-Wellness-Dost-
-This is the repository for your syntax error hackathon project
+This is the repository for syntax error hackathon project
 
 Team Members/Contributors
 
