@@ -3,7 +3,7 @@ This is the repository for syntax error hackathon project
 
 Team Members/Contributors
 
-1) Shantanu Prakash (Designer and Team Leader)
+1) Shantanu Prakash (Designer and Team Leader)  https://github.com/Shantanu21285
 2) Shivesh Gulati (Developer)
 
 Statement of purpose for our web-application / Problem Statement:
